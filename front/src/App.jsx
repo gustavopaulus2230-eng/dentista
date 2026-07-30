@@ -1,27 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Sobre from './components/Sobre';
-import Numeros from './components/Numeros';
+
 import Servicos from './components/Servicos';
 import Diferenciais from './components/Diferenciais';
 import Processo from './components/Processo';
 import Depoimentos from './components/Depoimentos';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
-import Toast from './components/Toast';
+
 
 export default function App() {
-  const [toastMsg, setToastMsg] = useState('');
-  const [toastVisible, setToastVisible] = useState(false);
-
-  const handleShowToast = (msg) => {
-    setToastMsg(msg);
-    setToastVisible(true);
-    setTimeout(() => {
-      setToastVisible(false);
-    }, 3500);
-  };
 
   useEffect(() => {
     const animElements = document.querySelectorAll(
@@ -55,15 +45,15 @@ export default function App() {
       <main>
         <Hero />
         <Sobre />
-        <Numeros />
+
         <Servicos />
         <Diferenciais />
         <Processo />
         <Depoimentos />
-        <Contato onShowToast={handleShowToast} />
+        <Contato />
       </main>
       <Footer />
-      <Toast message={toastMsg} visible={toastVisible} />
+
     </div>
   );
 }
