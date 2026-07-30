@@ -62,24 +62,6 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="hero-stats">
-          <div className="stat">
-            <span className="stat-num">500<span className="stat-plus">+</span></span>
-            <span className="stat-label">Pacientes atendidos</span>
-          </div>
-          <div className="stat-divider"></div>
-          <div className="stat">
-            <span className="stat-num">5<span className="stat-plus" style={{ display: 'inline-flex', verticalAlign: 'middle', marginLeft: '2px' }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </span></span>
-            <span className="stat-label">Avaliação média</span>
-          </div>
-          <div className="stat-divider"></div>
-          <div className="stat">
-            <span className="stat-num">8<span className="stat-plus">+</span></span>
-            <span className="stat-label">Anos de experiência</span>
-          </div>
-        </div>
       </div>
 
       <div className="hero-scroll">

@@ -5,32 +5,6 @@ export default function Sobre() {
     <section className="sobre" id="sobre">
       <div className="container">
         <div className="sobre-grid">
-          <div className="sobre-image-wrapper">
-            <div className="sobre-image-frame">
-              <img src="/dentist_portrait_nathalia.png" alt="Dra. Nathália Cougo – Cirurgiã-Dentista" className="sobre-img" />
-              <div className="sobre-img-overlay"></div>
-            </div>
-
-            <div className="sobre-badge-floating">
-              <div className="floating-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2C8 2 5 5 5 8c0 2.5 1 4.5 2.5 6L9 20h6l1.5-6C18 12.5 19 10.5 19 8c0-3-3-6-7-6z"/>
-                  <path d="M9 20v1a2 2 0 004 0v-1"/>
-                </svg>
-              </div>
-              <div>
-                <strong>CRO Ativo</strong>
-                <small>Registro profissional</small>
-              </div>
-            </div>
-
-            <div className="sobre-exp-tag">
-              <span className="exp-number">8+</span>
-              <span className="exp-label">Anos de<br/>experiência</span>
-            </div>
-
-            <div className="sobre-bg-shape"></div>
-          </div>
 
           <div className="sobre-content">
             <div className="section-tag">Sobre mim</div>

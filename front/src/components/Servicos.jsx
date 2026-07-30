@@ -125,10 +125,20 @@ export default function Servicos() {
               style={{ '--srv-accent': s.accent, '--srv-accent-light': s.accentLight }}
             >
               <span className="srv-num">{s.num}</span>
-              <div className="srv-icon">{s.icon}</div>
+              <div className="srv-icon" style={{ boxShadow: `0 0 20px ${s.accentLight}` }}>{s.icon}</div>
               <h3 className="srv-title">{s.titulo}</h3>
-              <p className="srv-tagline">{s.tagline}</p>
-
+              <p className="srv-tagline" style={{ color: s.accent }}>{s.tagline}</p>
+              
+              <div className={`srv-details ${hovered === s.id ? 'active' : ''}`}>
+                <p className="srv-desc">{s.desc}</p>
+                <div className="srv-tags">
+                  {s.tags.map((tag, i) => (
+                    <span key={i} className="srv-tag" style={{ background: s.accentLight, color: s.accent, border: `1px solid ${s.accent}40` }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
