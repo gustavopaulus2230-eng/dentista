@@ -22,7 +22,7 @@ const servicos = [
     titulo: 'Implantes Dentários',
     tagline: 'O mais procurado',
     desc: 'Substitua dentes ausentes com a solução mais duradoura e natural disponível.',
-    tags: ['Implante unitário', 'Protocolo', 'All-on-4 / All-on-6', 'Carga imediata'],
+    tags: ['Implante unitário', 'Protocolo', 'Carga imediata'],
     accent: '#FFFFFF',
     accentLight: 'rgba(255,255,255,0.12)',
     icon: (
